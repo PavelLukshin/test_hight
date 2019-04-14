@@ -1,0 +1,529 @@
+.portfolio {
+  padding: 110px 0 110px 0;
+  @media screen and (max-width: 768px) {
+      padding: 20px 0 25px 0;
+    }
+    @media screen and (max-width: 550px) {
+      padding: 20px 0 25px 0;
+    }
+  h2 {
+    font-family: 'Arvo', serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: #3e3e3e;
+    margin: 0 9px 53px 0;
+    @media screen and (max-width: 1200px) {
+      margin: 0 9px 55px 0;
+    }
+    @media screen and (max-width: 768px) {
+      margin: 0 9px 48px 0;
+    }
+    @media screen and (max-width: 550px) {
+      font-size: 23px;
+      margin: 0 9px 50px 0;
+    }
+  }
+  .btn-portfolio {
+    display: block;
+    margin: 116px auto 0 auto;
+    width: 160px;
+    height: 50px;
+    background: #3e3e3e;
+    color: #dadada;
+    border: none;
+    border-radius: 15px;
+    font-family: 'Arvo', serif;
+    font-size: 18px;
+    font-weight: 100;
+    transition: opacity 1s linear;
+    outline: none;
+  }
+  .btn-portfolio:hover {
+    opacity: 0.7;
+  }
+}
+.item {
+  display: grid;
+  grid-gap: 25px;
+  grid-template-areas: 
+  ".item-1 .item-2 .item-3"
+  ".item-1 .item-5 .item-7"
+  ".item-4 .item-6 .item-7";
+  @media screen and (max-width: 1200px) {
+      grid-gap: 10px;
+      grid-template-areas: 
+      ".item-1 .item-2"
+      ".item-1 .item-7"
+      ".item-3 .item-7"
+      ".item-4 .item-5"
+      ".item-6 .item-5";
+  }
+  @media screen and (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      width: 300px;
+    }
+}
+.new-item {
+  margin-top: 20px;
+}
+.item-1 {
+  grid-area: item-1;
+  box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2);
+  @media screen and (max-width: 1200px) {
+    width: 350px;
+  }
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+  .change {
+    opacity: 0;
+    position: absolute;
+    top: 1255px;
+    height: 433px;
+    width: 328px;
+    transition: opacity 1s linear;
+    @media screen and (max-width: 1200px) {
+      top: 1547px;
+      width: 350px;
+    }
+    @media screen and (max-width: 768px) {
+      top: 1105px;
+      width: 300px;
+    }
+    @media screen and (max-width: 550px) {
+      top: 1314px;
+    }
+    p {
+      font-family: 'Arvo', serif;
+      font-size: 18px;
+      font-weight: bold;
+      color: #3e3e3e;
+      padding: 30px 0 0 25px;
+      height: 90px;
+      background: #c0c0c0;
+    }
+    span {
+      font-family: 'Roboto', sans-serif;
+      font-size: 15px;
+      font-weight: 100;
+      color: #3e3e3e;
+      font-style: italic;
+    }
+  }
+  .change-img {
+    text-align: center;
+    padding: 170px 0 130px 0;
+    background: #242424;
+    opacity: 0.5;
+    @media screen and (max-width: 1200px) {
+      padding: 182px 0 138px;
+    }
+    @media screen and (max-width: 768px) {
+      padding: 140px 0 115px 0;
+    }
+    a {
+      margin-right: 30px;
+    }
+    a:last-child {
+      margin-right: 0;
+    }
+  }
+  .change:hover {
+    opacity: 1;
+  }
+}
+.item-2 {
+  grid-area: item-2;
+  box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2);
+  @media screen and (max-width: 1200px) {
+    width: 350px;
+  }
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+  .change {
+    opacity: 0;
+    position: absolute;
+    top: 1256px;
+    height: 224px;
+    width: 329px;
+    transition: opacity 1s linear;
+    @media screen and (max-width: 1200px) {
+      top: 1546px;
+      width: 350px;
+    }
+    @media screen and (max-width: 768px) {
+      top: 1497px;
+      width: 300px;
+    }
+    @media screen and (max-width: 550px) {
+      top: 1708px;
+    }
+    p {
+      font-family: 'Arvo', serif;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 20px 0 0 15px;
+      height: 72px;
+      background: #c0c0c0;
+    }
+    span {
+      font-family: 'Roboto', sans-serif;
+      font-size: 15px;
+      font-weight: 100;
+      font-style: italic;
+    }
+  }
+  .change-img {
+    text-align: center;
+    padding: 60px 0 30px 0;
+    background: #242424;
+    opacity: 0.5;
+    @media screen and (max-width: 1200px) {
+      padding: 53px 0 45px 0;
+    }
+    @media screen and (max-width: 768px) {
+      padding: 38px 0 25px 0;
+    }
+    a {
+      margin-right: 30px;
+    }
+    a:last-child {
+      margin-right: 0;
+    }
+  }
+  .change:hover {
+    opacity: 1;
+  }
+}
+.item-3 {
+  grid-area: item-3;
+  box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2);
+  @media screen and (max-width: 1200px) {
+    width: 350px;
+  }
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+  .change {
+    opacity: 0;
+    position: absolute;
+    top: 1256px;
+    height: 224px;
+    width: 328px;
+    transition: opacity 1s linear;
+    @media screen and (max-width: 1200px) {
+      top: 2011px;
+      width: 350px;
+    }
+    @media screen and (max-width: 768px) {
+      top: 1680px;
+      width: 300px;
+    }
+    @media screen and (max-width: 550px) {
+      top: 1893px;
+      width: 300px;
+    }
+    p {
+      font-family: 'Arvo', serif;
+      font-size: 18px;
+      font-weight: bold;
+      padding-top: 20px 0 0 15px;
+      height: 72px;
+      background: #c0c0c0;
+    }
+    span {
+      font-family: 'Roboto', sans-serif;
+      font-size: 15px;
+      font-weight: 100;
+      font-style: italic;
+    }
+  }
+  .change-img {
+    text-align: center;
+    padding: 60px 0 30px 0;
+    background: #242424;
+    opacity: 0.5;
+    @media screen and (max-width: 1200px) {
+      padding: 53px 0 45px 0;
+    }
+    @media screen and (max-width: 768px) {
+      padding: 38px 0 25px 0;
+    }
+    a {
+      margin-right: 30px;
+    }
+    a:last-child {
+      margin-right: 0;
+    }
+  }
+  .change:hover {
+    opacity: 1;
+  }
+}
+.item-4 {
+  grid-area: item-4;
+  box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2); 
+  @media screen and (max-width: 1200px) {
+    width: 350px;
+  }
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+  .change {
+    opacity: 0;
+    position: absolute;
+    top: 1708px;
+    height: 224px;
+    width: 328px;
+    transition: opacity 1s linear;
+    @media screen and (max-width: 1200px) {
+      top: 2235px;
+      width: 350px;
+    }
+    @media screen and (max-width: 768px) {
+      top: 1865px;
+      width: 300px;
+    }
+    @media screen and (max-width: 550px) {
+      top: 2076px;
+      width: 300px;
+    }
+    p {
+      font-family: 'Arvo', serif;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 20px 0 0 15px;
+      height: 72px;
+      background: #c0c0c0;
+    }
+    span {
+      font-family: 'Roboto', sans-serif;
+      font-size: 15px;
+      font-weight: 100;
+      font-style: italic;
+    }
+  }
+  .change-img {
+    text-align: center;
+    padding: 60px 0 30px 0;
+    background: #242424;
+    opacity: 0.5;
+    @media screen and (max-width: 1200px) {
+      padding: 54px 0 45px 0;
+    }
+    @media screen and (max-width: 768px) {
+      padding: 38px 0 25px 0;
+    }
+    a {
+      margin-right: 30px;
+    }
+    a:last-child {
+      margin-right: 0;
+    }
+  }
+  .change:hover {
+    opacity: 1;
+  }
+}
+.item-5 {
+  grid-area: item-5;
+  box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2);
+  @media screen and (max-width: 1200px) {
+    width: 350px;
+    box-shadow: none;
+  }
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2);
+  }
+  .change {
+    opacity: 0;
+    position: absolute;
+    top: 1483px;
+    height: 224px;
+    width: 329px;
+    transition: opacity 1s linear;
+    @media screen and (max-width: 1200px) {
+      top: 2235px;
+      width: 350px;
+    }
+    @media screen and (max-width: 768px) {
+      top: 2050px;
+      width: 300px;
+    }
+    @media screen and (max-width: 550px) {
+      top: 2261px;
+      width: 300px;
+    }
+    p {
+      font-family: 'Arvo', serif;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 20px 0 0 15px;
+      height: 72px;
+      background: #c0c0c0;
+    }
+    span {
+      font-family: 'Roboto', sans-serif;
+      font-size: 15px;
+      font-weight: 100;
+      font-style: italic;
+    }
+  }
+  .change-img {
+    text-align: center;
+    padding: 60px 0 30px 0;
+    background: #242424;
+    opacity: 0.5;
+    @media screen and (max-width: 1200px) {
+      padding: 53px 0 45px 0;
+    }
+    @media screen and (max-width: 768px) {
+      padding: 38px 0 25px 0;
+    }
+    a {
+      margin-right: 30px;
+    }
+    a:last-child {
+      margin-right: 0;
+    }
+  }
+  .change:hover {
+    opacity: 1;
+  }
+}
+.item-6 {
+  grid-area: item-6;
+  box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2);
+  @media screen and (max-width: 1200px) {
+      width: 350px;
+  }
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+  .change {
+    opacity: 0;
+    position: absolute;
+    top: 1708px;
+    height: 224px;
+    width: 329px;
+    transition: opacity 1s linear;
+    @media screen and (max-width: 1200px) {
+      top: 2460px;
+      width: 350px;
+    }
+    @media screen and (max-width: 768px) {
+      top: 2232px;
+      width: 300px;
+    }
+    @media screen and (max-width: 550px) {
+      top: 2442px;
+      width: 300px;
+    }
+    p {
+      font-family: 'Arvo', serif;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 20px 0 0 15px;
+      height: 72px;
+      background: #c0c0c0;
+    }
+    span {
+      font-family: 'Roboto', sans-serif;
+      font-size: 15px;
+      font-weight: 100;
+      font-style: italic;
+    }
+  }
+  .change-img {
+    text-align: center;
+    padding: 60px 0 30px 0;
+    background: #242424;
+    opacity: 0.5;
+    @media screen and (max-width: 1200px) {
+      padding: 53px 0 45px 0;
+    }
+    @media screen and (max-width: 768px) {
+      padding: 38px 0 25px 0;
+    }
+    a {
+      margin-right: 30px;
+    }
+    a:last-child {
+      margin-right: 0;
+    }
+  }
+  .change:hover {
+    opacity: 1;
+  }
+}
+.item-7 {
+  grid-area: item-7;
+  box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2); 
+  @media screen and (max-width: 1200px) {
+    width: 350px;
+  }
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+  .change {
+    opacity: 0;
+    position: absolute;
+    top: 1480px;
+    height: 424px;
+    width: 328px;
+    transition: opacity 1s linear;
+    @media screen and (max-width: 1200px) {
+      top: 1770px;
+      width: 350px;
+    }
+    @media screen and (max-width: 768px) {
+      top: 2418px;
+      width: 300px;
+    }
+    @media screen and (max-width: 550px) {
+      top: 2626px;
+      width: 300px;
+    }
+    p {
+      font-family: 'Arvo', serif;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 30px 0 0 25px;
+      height: 90px;
+      background: #c0c0c0;
+    }
+    span {
+      font-family: 'Roboto', sans-serif;
+      font-size: 15px;
+      font-weight: 100;
+      font-style: italic;
+    }
+  }
+  .change-img {
+    text-align: center;
+    padding: 170px 0 130px 0;
+    background: #242424;
+    opacity: 0.5;
+    transition: opacity 1s linear;
+    @media screen and (max-width: 1200px) {
+      padding: 184px 0 137px 0;
+    }
+    @media screen and (max-width: 768px) {
+      padding: 143px 0 115px 0;
+    }
+    a {
+      margin-right: 30px;
+    }
+    a:last-child {
+      margin-right: 0;
+    }
+  }
+  .change:hover {
+    opacity: 1;
+  }
+}
