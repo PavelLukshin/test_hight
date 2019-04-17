@@ -1,19 +1,21 @@
+$breakpoints: (lg: 1200px, md: 992px, sm: 768px, xs: 550px);
+
 .header {
   background: url(../images/bg-header.jpg) no-repeat center center / cover;
   min-height: 300px;
   padding-bottom: 154px; 
-  @media screen and (max-width: 768px) {
+  @include media ("<=sm") {
     padding-bottom: 20px; 
   }
 }
 .wrapper {
   width: 1110px;
   margin: 0px auto;  
-  @media screen and (max-width: 1200px) {
+  @include media ("<=lg") {
     width: 100%;
     padding: 30px 50px 0 50px;
   }
-  @media screen and (max-width: 768px) {
+  @include media ("<=sm") {
     padding: 15px 20px 0 20px;
   }
 }
@@ -28,7 +30,7 @@
     text-decoration: none;
     color: #3e3e3e;
   }
-  @media screen and (max-width: 992px) {
+  @include media ("<=md") {
     flex-direction: row-reverse;
   }
 }
@@ -47,7 +49,7 @@
   .burger:hover {
     opacity: 0.7;
   }
-  @media screen and (max-width: 768px) {
+  @include media ("<=sm") {
     padding-top: 10px;
    }
 }
@@ -75,12 +77,12 @@
       color: #f3f3f3;
     }
   }
-  @media screen and (max-width: 992px) {
+  @include media ("<=md") {
     flex-direction: column;
     position: absolute;
     left: 70px;
   }
-  @media screen and (max-width: 768px) {
+  @include media ("<=sm") {
     left: 40px;
     padding-top: 10px;
   }
@@ -93,7 +95,7 @@
     font-weight: bold;
     color: #3e3e3e;
     margin-top: 150px;
-    @media screen and (max-width: 550px) {
+    @include media ("<=xs") {
       font-size: 24px;
     }
   }
@@ -103,7 +105,7 @@
     font-weight: 400;
     color: #3e3e3e;
     margin: -15px 0 27px 0;
-    @media screen and (max-width: 550px) {
+    @include media ("<=xs") {
       font-size: 20px;
       margin-top: 10px;
     }
@@ -115,7 +117,7 @@
     font-weight: 400;
     width: 510px;
     margin: 0 auto 52px auto;
-    @media screen and (max-width: 550px) {
+    @include media ("<=xs") {
       font-size: 14px;
       width: 280px;
     }
@@ -123,7 +125,7 @@
   .header-btn {
     display: flex;
     justify-content: center;
-    @media screen and (max-width: 550px) {
+    @include media ("<=xs") {
       display: flex;
       flex-direction: column;
       align-items: center; 
@@ -139,7 +141,7 @@
     padding-top: 12px;
     transition: opacity 1s linear;
     outline: none;
-    @media screen and (max-width: 550px) {
+    @include media ("<=xs") {
       margin-right: 0px;
       margin-top: 10px; 
     }

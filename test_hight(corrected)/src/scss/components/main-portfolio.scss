@@ -1,6 +1,6 @@
 .portfolio {
   padding: 110px 0 110px 0;
-  @media screen and (max-width: 768px) {
+  @include media ("<=sm") {
       padding: 20px 0 25px 0;
     }
   h2 {
@@ -10,13 +10,13 @@
     text-align: center;
     color: #3e3e3e;
     margin: 0 9px 53px 0;
-    @media screen and (max-width: 1200px) {
+    @include media ("<=lg") {
       margin: 0 9px 55px 0;
     }
-    @media screen and (max-width: 768px) {
+    @include media ("<=sm") {
       margin: 0 9px 48px 0;
     }
-    @media screen and (max-width: 550px) {
+    @include media ("<=xs") {
       font-size: 23px;
       margin: 0 9px 50px 0;
     }
@@ -47,7 +47,7 @@
   ".item-1 .item-2 .item-3"
   ".item-1 .item-5 .item-7"
   ".item-4 .item-6 .item-7";
-  @media screen and (max-width: 1200px) {
+  @include media ("<=lg") {
       grid-gap: 10px;
       grid-template-areas: 
       ".item-1 .item-2"
@@ -56,7 +56,7 @@
       ".item-4 .item-5"
       ".item-6 .item-5";
   }
-  @media screen and (max-width: 768px) {
+  @include media ("<=sm") {
       display: flex;
       flex-direction: column;
       margin: 0 auto;
@@ -69,10 +69,10 @@
 .item-1 {
   grid-area: item-1;
   box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2);
-  @media screen and (max-width: 1200px) {
+  @include media ("<=lg") {
     width: 350px;
   }
-  @media screen and (max-width: 768px) {
+  @include media ("<=sm") {
     width: 100%;
   }
   .change {
@@ -82,15 +82,15 @@
     height: 433px;
     width: 328px;
     transition: opacity 1s linear;
-    @media screen and (max-width: 1200px) {
+    @include media ("<=lg") {
       top: 1547px;
       width: 350px;
     }
-    @media screen and (max-width: 768px) {
+    @include media ("<=sm") {
       top: 1105px;
       width: 300px;
     }
-    @media screen and (max-width: 550px) {
+    @include media ("<=xs") {
       top: 1314px;
     }
     p {
@@ -115,10 +115,10 @@
     padding: 170px 0 130px 0;
     background: #242424;
     opacity: 0.5;
-    @media screen and (max-width: 1200px) {
+    @include media ("<=lg") {
       padding: 182px 0 138px;
     }
-    @media screen and (max-width: 768px) {
+    @include media ("<=sm") {
       padding: 140px 0 115px 0;
     }
     a {
@@ -135,10 +135,10 @@
 .item-2 {
   grid-area: item-2;
   box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2);
-  @media screen and (max-width: 1200px) {
+  @include media ("<=lg") {
     width: 350px;
   }
-  @media screen and (max-width: 768px) {
+  @include media ("<=sm") {
     width: 100%;
   }
   .change {
@@ -148,15 +148,15 @@
     height: 224px;
     width: 329px;
     transition: opacity 1s linear;
-    @media screen and (max-width: 1200px) {
+    @include media ("<=lg") {
       top: 1546px;
       width: 350px;
     }
-    @media screen and (max-width: 768px) {
+    @include media ("<=sm") {
       top: 1497px;
       width: 300px;
     }
-    @media screen and (max-width: 550px) {
+    @include media ("<=xs") {
       top: 1708px;
     }
     p {
@@ -179,10 +179,10 @@
     padding: 60px 0 30px 0;
     background: #242424;
     opacity: 0.5;
-    @media screen and (max-width: 1200px) {
+    @include media ("<=lg") {
       padding: 53px 0 45px 0;
     }
-    @media screen and (max-width: 768px) {
+    @include media ("<=sm") {
       padding: 38px 0 25px 0;
     }
     a {
@@ -199,10 +199,10 @@
 .item-3 {
   grid-area: item-3;
   box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2);
-  @media screen and (max-width: 1200px) {
+  @include media ("<=lg") {
     width: 350px;
   }
-  @media screen and (max-width: 768px) {
+  @include media ("<=sm") {
     width: 100%;
   }
   .change {
@@ -212,15 +212,15 @@
     height: 224px;
     width: 328px;
     transition: opacity 1s linear;
-    @media screen and (max-width: 1200px) {
+    @include media ("<=lg") {
       top: 2011px;
       width: 350px;
     }
-    @media screen and (max-width: 768px) {
+    @include media ("<=sm") {
       top: 1680px;
       width: 300px;
     }
-    @media screen and (max-width: 550px) {
+    @include media ("<=xs") {
       top: 1893px;
       width: 300px;
     }
@@ -244,10 +244,10 @@
     padding: 60px 0 30px 0;
     background: #242424;
     opacity: 0.5;
-    @media screen and (max-width: 1200px) {
+    @include media ("<=lg") {
       padding: 53px 0 45px 0;
     }
-    @media screen and (max-width: 768px) {
+    @include media ("<=sm") {
       padding: 38px 0 25px 0;
     }
     a {
@@ -264,10 +264,10 @@
 .item-4 {
   grid-area: item-4;
   box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2); 
-  @media screen and (max-width: 1200px) {
+  @include media ("<=lg") {
     width: 350px;
   }
-  @media screen and (max-width: 768px) {
+  @include media ("<=sm") {
     width: 100%;
   }
   .change {
@@ -277,15 +277,15 @@
     height: 224px;
     width: 328px;
     transition: opacity 1s linear;
-    @media screen and (max-width: 1200px) {
+    @include media ("<=lg") {
       top: 2235px;
       width: 350px;
     }
-    @media screen and (max-width: 768px) {
+    @include media ("<=sm") {
       top: 1865px;
       width: 300px;
     }
-    @media screen and (max-width: 550px) {
+    @include media ("<=xs") {
       top: 2076px;
       width: 300px;
     }
@@ -309,10 +309,10 @@
     padding: 60px 0 30px 0;
     background: #242424;
     opacity: 0.5;
-    @media screen and (max-width: 1200px) {
+    @include media ("<=lg") {
       padding: 54px 0 45px 0;
     }
-    @media screen and (max-width: 768px) {
+    @include media ("<=sm") {
       padding: 38px 0 25px 0;
     }
     a {
@@ -329,11 +329,11 @@
 .item-5 {
   grid-area: item-5;
   box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2);
-  @media screen and (max-width: 1200px) {
+  @include media ("<=lg") {
     width: 350px;
     box-shadow: none;
   }
-  @media screen and (max-width: 768px) {
+  @include media ("<=sm") {
     width: 100%;
     box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2);
   }
@@ -344,15 +344,15 @@
     height: 224px;
     width: 329px;
     transition: opacity 1s linear;
-    @media screen and (max-width: 1200px) {
+    @include media ("<=lg") {
       top: 2235px;
       width: 350px;
     }
-    @media screen and (max-width: 768px) {
+    @include media ("<=sm") {
       top: 2050px;
       width: 300px;
     }
-    @media screen and (max-width: 550px) {
+    @include media ("<=xs") {
       top: 2261px;
       width: 300px;
     }
@@ -376,10 +376,10 @@
     padding: 60px 0 30px 0;
     background: #242424;
     opacity: 0.5;
-    @media screen and (max-width: 1200px) {
+    @include media ("<=lg") {
       padding: 53px 0 45px 0;
     }
-    @media screen and (max-width: 768px) {
+    @include media ("<=sm") {
       padding: 38px 0 25px 0;
     }
     a {
@@ -396,10 +396,10 @@
 .item-6 {
   grid-area: item-6;
   box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2);
-  @media screen and (max-width: 1200px) {
+  @include media ("<=lg") {
       width: 350px;
   }
-  @media screen and (max-width: 768px) {
+  @include media ("<=sm") {
     width: 100%;
   }
   .change {
@@ -409,15 +409,15 @@
     height: 224px;
     width: 329px;
     transition: opacity 1s linear;
-    @media screen and (max-width: 1200px) {
+    @include media ("<=lg") {
       top: 2460px;
       width: 350px;
     }
-    @media screen and (max-width: 768px) {
+    @include media ("<=sm") {
       top: 2232px;
       width: 300px;
     }
-    @media screen and (max-width: 550px) {
+    @include media ("<=xs") {
       top: 2442px;
       width: 300px;
     }
@@ -441,10 +441,10 @@
     padding: 60px 0 30px 0;
     background: #242424;
     opacity: 0.5;
-    @media screen and (max-width: 1200px) {
+    @include media ("<=lg") {
       padding: 53px 0 45px 0;
     }
-    @media screen and (max-width: 768px) {
+    @include media ("<=sm") {
       padding: 38px 0 25px 0;
     }
     a {
@@ -461,10 +461,10 @@
 .item-7 {
   grid-area: item-7;
   box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2); 
-  @media screen and (max-width: 1200px) {
+  @include media ("<=lg") {
     width: 350px;
   }
-  @media screen and (max-width: 768px) {
+  @include media ("<=sm") {
     width: 100%;
   }
   .change {
@@ -474,15 +474,15 @@
     height: 424px;
     width: 328px;
     transition: opacity 1s linear;
-    @media screen and (max-width: 1200px) {
+    @include media ("<=lg") {
       top: 1770px;
       width: 350px;
     }
-    @media screen and (max-width: 768px) {
+    @include media ("<=sm") {
       top: 2418px;
       width: 300px;
     }
-    @media screen and (max-width: 550px) {
+    @include media ("<=xs") {
       top: 2626px;
       width: 300px;
     }
@@ -507,10 +507,10 @@
     background: #242424;
     opacity: 0.5;
     transition: opacity 1s linear;
-    @media screen and (max-width: 1200px) {
+    @include media ("<=lg") {
       padding: 184px 0 137px 0;
     }
-    @media screen and (max-width: 768px) {
+    @include media ("<=sm") {
       padding: 143px 0 115px 0;
     }
     a {
