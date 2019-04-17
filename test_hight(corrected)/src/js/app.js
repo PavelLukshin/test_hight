@@ -38,10 +38,10 @@
         for (let i = 0; i < data.items.length; i++) {
           const item = $(`<div class="item-${i+1}">
             <img src="assets/images/icon-${i+1}.png" alt="icon-${i+1}">
-            <div class="hover">
-              <div class="hover-img">
-                  <a href="#"><img src="assets/images/eye.png" alt="eye"></a>
-                  <a href="#"><img src="assets/images/heart.png" alt="heart"></a>
+            <div class="change">
+              <div class="change-img">
+                  <a href="#"><img src="assets/images/icon-eye.png" alt="eye"></a>
+                  <a href="#"><img src="assets/images/icon-heart.png" alt="heart"></a>
               </div>
               <p>${data.items[i].title}<br><span>${data.items[i].description}</span></p>
             </div>
