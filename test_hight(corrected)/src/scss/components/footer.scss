@@ -11,6 +11,9 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
     justify-items: center;
+    .wrap {
+      margin-left: -120px;
+    }
   }
   @include media ("<=sm") {
     grid-template-columns: 1fr;
@@ -31,16 +34,16 @@
     color: #3e3e3e;
     text-decoration: none;
     transition: opacity 1s linear;
-  }
-  a:hover {
-    opacity: 0.7;
+    &:hover {
+      opacity: 0.7;
+    }
   }
   li {
     list-style: none;
     margin-bottom: 10px;
-  }
-  li:last-child {
-    margin-bottom: 0px;
+    &:last-child {
+      margin-bottom: 0px;
+    }
   }
   ul {
     margin-left: -40px; 
@@ -54,10 +57,10 @@
     font-weight: 400;
     line-height: 1.5em;
     color: #3e3e3e;
-  }
-  p::first-line {
-    font-size: 18;
-    font-weight: bold;
+    &::first-line {
+      font-size: 18;
+      font-weight: bold;
+    }
   }
 }
 .news {
@@ -83,7 +86,7 @@ input[type="email"] {
   margin-top: 13px;
   outline: none;
 }
-#myForm {
+.footerForm {
   button {
   width: 95px;
   height: 42px;
@@ -92,12 +95,12 @@ input[type="email"] {
   background: #3e3e3e;
   color: #d3d3d3;
   margin-left: -5px;
-  transition: opacity 1s linear;
   outline: none;
-}
-button:hover {
-  opacity: 0.7;
-}
+  transition: opacity 1s linear;
+  &:hover {
+    opacity: 0.7;
+    }
+  }
 }
 input.error {
   border: 2px solid #99182c;

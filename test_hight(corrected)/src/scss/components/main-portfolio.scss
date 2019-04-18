@@ -14,11 +14,11 @@
       margin: 0 9px 55px 0;
     }
     @include media ("<=sm") {
-      margin: 0 9px 48px 0;
+      margin-bottom: 48px;
     }
     @include media ("<=xs") {
       font-size: 23px;
-      margin: 0 9px 50px 0;
+      margin-bottom: 50px;
     }
   }
   .btn-portfolio {
@@ -35,9 +35,9 @@
     font-weight: 100;
     transition: opacity 1s linear;
     outline: none;
-  }
-  .btn-portfolio:hover {
-    opacity: 0.7;
+    &:hover {
+      opacity: 0.7;
+    }
   }
 }
 .item {
@@ -78,20 +78,23 @@
   .change {
     opacity: 0;
     position: absolute;
-    top: 1255px;
+    top: 1285px;
     height: 433px;
     width: 328px;
     transition: opacity 1s linear;
+    &:hover {
+      opacity: 1;
+    }
     @include media ("<=lg") {
-      top: 1547px;
+      top: 1577px;
       width: 350px;
     }
     @include media ("<=sm") {
-      top: 1105px;
+      top: 1130px;
       width: 300px;
     }
     @include media ("<=xs") {
-      top: 1314px;
+      top: 1339px;
     }
     p {
       font-family: 'Arvo', serif;
@@ -123,13 +126,10 @@
     }
     a {
       margin-right: 30px;
+      &:last-child {
+        margin-right: 0;
+      }
     }
-    a:last-child {
-      margin-right: 0;
-    }
-  }
-  .change:hover {
-    opacity: 1;
   }
 }
 .item-2 {
@@ -144,20 +144,23 @@
   .change {
     opacity: 0;
     position: absolute;
-    top: 1256px;
+    top: 1286px;
     height: 224px;
     width: 329px;
     transition: opacity 1s linear;
+    &:hover {
+      opacity: 1;
+    }
     @include media ("<=lg") {
-      top: 1546px;
+      top: 1576px;
       width: 350px;
     }
     @include media ("<=sm") {
-      top: 1497px;
+      top: 1523px;
       width: 300px;
     }
     @include media ("<=xs") {
-      top: 1708px;
+      top: 1733px;
     }
     p {
       font-family: 'Arvo', serif;
@@ -187,13 +190,10 @@
     }
     a {
       margin-right: 30px;
+      &:last-child {
+        margin-right: 0;
+      }
     }
-    a:last-child {
-      margin-right: 0;
-    }
-  }
-  .change:hover {
-    opacity: 1;
   }
 }
 .item-3 {
@@ -208,21 +208,23 @@
   .change {
     opacity: 0;
     position: absolute;
-    top: 1256px;
+    top: 1286px;
     height: 224px;
     width: 328px;
     transition: opacity 1s linear;
+    &:hover {
+      opacity: 1;
+    }
     @include media ("<=lg") {
-      top: 2011px;
+      top: 2041px;
       width: 350px;
     }
     @include media ("<=sm") {
-      top: 1680px;
+      top: 1705px;
       width: 300px;
     }
     @include media ("<=xs") {
-      top: 1893px;
-      width: 300px;
+      top: 1918px;
     }
     p {
       font-family: 'Arvo', serif;
@@ -252,13 +254,10 @@
     }
     a {
       margin-right: 30px;
+      &:last-child {
+        margin-right: 0;
+      }
     }
-    a:last-child {
-      margin-right: 0;
-    }
-  }
-  .change:hover {
-    opacity: 1;
   }
 }
 .item-4 {
@@ -273,21 +272,23 @@
   .change {
     opacity: 0;
     position: absolute;
-    top: 1708px;
+    top: 1738px;
     height: 224px;
     width: 328px;
     transition: opacity 1s linear;
+    &:hover {
+      opacity: 1;
+    }
     @include media ("<=lg") {
-      top: 2235px;
+      top: 2265px;
       width: 350px;
     }
     @include media ("<=sm") {
-      top: 1865px;
+      top: 1890px;
       width: 300px;
     }
     @include media ("<=xs") {
-      top: 2076px;
-      width: 300px;
+      top: 2101px;
     }
     p {
       font-family: 'Arvo', serif;
@@ -317,13 +318,10 @@
     }
     a {
       margin-right: 30px;
+      &:last-child {
+        margin-right: 0;
+      }
     }
-    a:last-child {
-      margin-right: 0;
-    }
-  }
-  .change:hover {
-    opacity: 1;
   }
 }
 .item-5 {
@@ -340,21 +338,23 @@
   .change {
     opacity: 0;
     position: absolute;
-    top: 1483px;
+    top: 1513px;
     height: 224px;
     width: 329px;
     transition: opacity 1s linear;
+    &:hover {
+      opacity: 1;
+    }
     @include media ("<=lg") {
-      top: 2235px;
+      top: 2265px;
       width: 350px;
     }
     @include media ("<=sm") {
-      top: 2050px;
+      top: 2075px;
       width: 300px;
     }
     @include media ("<=xs") {
-      top: 2261px;
-      width: 300px;
+      top: 2286px;
     }
     p {
       font-family: 'Arvo', serif;
@@ -384,13 +384,10 @@
     }
     a {
       margin-right: 30px;
+      &:last-child {
+        margin-right: 0;
+      }
     }
-    a:last-child {
-      margin-right: 0;
-    }
-  }
-  .change:hover {
-    opacity: 1;
   }
 }
 .item-6 {
@@ -405,21 +402,23 @@
   .change {
     opacity: 0;
     position: absolute;
-    top: 1708px;
+    top: 1738px;
     height: 224px;
     width: 329px;
     transition: opacity 1s linear;
+    &:hover {
+      opacity: 1;
+    }
     @include media ("<=lg") {
-      top: 2460px;
+      top: 2490px;
       width: 350px;
     }
     @include media ("<=sm") {
-      top: 2232px;
+      top: 2257px;
       width: 300px;
     }
     @include media ("<=xs") {
-      top: 2442px;
-      width: 300px;
+      top: 2467px;
     }
     p {
       font-family: 'Arvo', serif;
@@ -449,13 +448,10 @@
     }
     a {
       margin-right: 30px;
+      &:last-child {
+        margin-right: 0;
+      }
     }
-    a:last-child {
-      margin-right: 0;
-    }
-  }
-  .change:hover {
-    opacity: 1;
   }
 }
 .item-7 {
@@ -470,21 +466,23 @@
   .change {
     opacity: 0;
     position: absolute;
-    top: 1480px;
+    top: 1510px;
     height: 424px;
     width: 328px;
     transition: opacity 1s linear;
+    &:hover {
+      opacity: 1;
+    }
     @include media ("<=lg") {
-      top: 1770px;
+      top: 1800px;
       width: 350px;
     }
     @include media ("<=sm") {
-      top: 2418px;
+      top: 2443px;
       width: 300px;
     }
     @include media ("<=xs") {
-      top: 2626px;
-      width: 300px;
+      top: 2653px;
     }
     p {
       font-family: 'Arvo', serif;
@@ -515,12 +513,9 @@
     }
     a {
       margin-right: 30px;
+      &:last-child {
+        margin-right: 0;
+      }
     }
-    a:last-child {
-      margin-right: 0;
-    }
-  }
-  .change:hover {
-    opacity: 1;
   }
 }

@@ -3,7 +3,7 @@
   // When DOM is ready
   $(() => {
 
-    $("#myForm").validate({
+    $("#footerForm").validate({
       rules: {
         email: {
           required: true,
@@ -19,11 +19,12 @@
         vertical: true 
     });
 
-
+    
     $('.burger').click(function(){
       $('.nav-menu').toggleClass('active');
     });
 
+    
 
     $.getJSON('assets/data/portfolio.json', function(data) {
       const portfolio = $('.portfolio');
