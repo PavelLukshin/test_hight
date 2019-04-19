@@ -9,16 +9,10 @@
     font-weight: bold;
     text-align: center;
     color: #3e3e3e;
-    margin: 0 9px 53px 0;
-    @include media ("<=lg") {
-      margin: 0 9px 55px 0;
-    }
-    @include media ("<=sm") {
-      margin-bottom: 48px;
-    }
+    margin: 0 9px 60px 0;
     @include media ("<=xs") {
       font-size: 23px;
-      margin-bottom: 50px;
+      margin-bottom: 25px;
     }
   }
   .btn-portfolio {
@@ -38,484 +32,190 @@
     &:hover {
       opacity: 0.7;
     }
+    @include media ("<=sm") {
+      margin-top: 20px;
+    }
   }
 }
-.item {
-  display: grid;
-  grid-gap: 25px;
-  grid-template-areas: 
-  ".item-1 .item-2 .item-3"
-  ".item-1 .item-5 .item-7"
-  ".item-4 .item-6 .item-7";
+.grid {
+  margin: 0 auto;
   @include media ("<=lg") {
-      grid-gap: 10px;
-      grid-template-areas: 
-      ".item-1 .item-2"
-      ".item-1 .item-7"
-      ".item-3 .item-7"
-      ".item-4 .item-5"
-      ".item-6 .item-5";
+    width: 730px;
   }
   @include media ("<=sm") {
-      display: flex;
-      flex-direction: column;
-      margin: 0 auto;
+    width: 350px;
+  }
+  @include media ("<=xs") {
+    width: 300px;
+  }
+  .grid-item {
+  width: 350px;
+  height: 210px;
+  box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2);
+  margin-bottom: 30px;
+  @include media ("<=xs") {
+    width: 300px;
+    height: 180px;
+    } 
+  }
+  .grid-item--height2 {
+  height: 450px;
+  @include media ("<=xs") {
+    height: 388px;
+    } 
+  }
+}
+.item-1,
+.item-5 {
+  .change {
+    opacity: 0;
+    position: relative;
+    top: -455px;
+    height: 450px;
+    width: 350px;
+    transition: opacity 1s linear;
+    &:hover {
+      opacity: 1;
+    }
+    @include media ("<=xs") {
+      top: -393px;
       width: 300px;
     }
+    p {
+      font-family: 'Arvo', serif;
+      font-size: 18px;
+      font-weight: bold;
+      color: #3e3e3e;
+      padding: 30px 0 0 25px;
+      height: 90px;
+      background: #c0c0c0;
+    }
+    span {
+      font-family: 'Roboto', sans-serif;
+      font-size: 15px;
+      font-weight: 100;
+      color: #3e3e3e;
+      font-style: italic;
+    }
+  }
+  .change-img {
+    text-align: center;
+    padding: 170px 0 147px 0;
+    background: #242424;
+    opacity: 0.5;
+    @include media ("<=xs") {
+      padding: 130px 0 125px 0;
+    }
+    a {
+      margin-right: 30px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
 }
-.new-item {
-  margin-top: 20px;
+.item-2,
+.item-3,
+.item-4,
+.item-6,
+.item-7 {
+  .change {
+    opacity: 0;
+    position: relative;
+    top: -215px;
+    height: 210px;
+    width: 350px;
+    transition: opacity 1s linear;
+    &:hover {
+      opacity: 1;
+    }
+    @include media ("<=xs") {
+      top: -185px;
+      width: 300px;
+    }
+    p {
+      font-family: 'Arvo', serif;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 20px 0 0 15px;
+      height: 72px;
+      background: #c0c0c0;
+    }
+    span {
+      font-family: 'Roboto', sans-serif;
+      font-size: 15px;
+      font-weight: 100;
+      font-style: italic;
+    }
+  }
+  .change-img {
+    text-align: center;
+    padding: 60px 0 35px 0;
+    background: #242424;
+    opacity: 0.5;
+    @include media ("<=xs") {
+      padding: 40px 0 25px 0;
+    }
+    a {
+      margin-right: 30px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+.newItem {
+  margin-left: -15px;
+  display: grid;
+  grid-gap: 15px;
+  grid-template-areas: 
+  ".item-1 .item-2 .item-3"
+  ".item-1 .item-7 .item-5"
+  ".item-4 .item-6 .item-5";
+  @include media ("<=lg") {
+    grid-gap: 0px;
+    width: 760px;
+    margin: 0 auto;
+    grid-template-areas: 
+    ".item-1 .item-2"
+    ".item-1 .item-5"
+    ".item-3 .item-5"
+    ".item-4 .item-7"
+    ".item-6 .item-7";
+  }
+  @include media ("<=sm") {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .grid-item {
+    margin-bottom: 15px;
+    @include media ("<=lg") {
+      margin-bottom: 30px;
+    }
+  }
 }
 .item-1 {
   grid-area: item-1;
-  box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2);
-  @include media ("<=lg") {
-    width: 350px;
-  }
-  @include media ("<=sm") {
-    width: 100%;
-  }
-  .change {
-    opacity: 0;
-    position: absolute;
-    top: 1285px;
-    height: 433px;
-    width: 328px;
-    transition: opacity 1s linear;
-    &:hover {
-      opacity: 1;
-    }
-    @include media ("<=lg") {
-      top: 1577px;
-      width: 350px;
-    }
-    @include media ("<=sm") {
-      top: 1130px;
-      width: 300px;
-    }
-    @include media ("<=xs") {
-      top: 1339px;
-    }
-    p {
-      font-family: 'Arvo', serif;
-      font-size: 18px;
-      font-weight: bold;
-      color: #3e3e3e;
-      padding: 30px 0 0 25px;
-      height: 90px;
-      background: #c0c0c0;
-    }
-    span {
-      font-family: 'Roboto', sans-serif;
-      font-size: 15px;
-      font-weight: 100;
-      color: #3e3e3e;
-      font-style: italic;
-    }
-  }
-  .change-img {
-    text-align: center;
-    padding: 170px 0 130px 0;
-    background: #242424;
-    opacity: 0.5;
-    @include media ("<=lg") {
-      padding: 182px 0 138px;
-    }
-    @include media ("<=sm") {
-      padding: 140px 0 115px 0;
-    }
-    a {
-      margin-right: 30px;
-      &:last-child {
-        margin-right: 0;
-      }
-    }
-  }
 }
 .item-2 {
   grid-area: item-2;
-  box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2);
-  @include media ("<=lg") {
-    width: 350px;
-  }
-  @include media ("<=sm") {
-    width: 100%;
-  }
-  .change {
-    opacity: 0;
-    position: absolute;
-    top: 1286px;
-    height: 224px;
-    width: 329px;
-    transition: opacity 1s linear;
-    &:hover {
-      opacity: 1;
-    }
-    @include media ("<=lg") {
-      top: 1576px;
-      width: 350px;
-    }
-    @include media ("<=sm") {
-      top: 1523px;
-      width: 300px;
-    }
-    @include media ("<=xs") {
-      top: 1733px;
-    }
-    p {
-      font-family: 'Arvo', serif;
-      font-size: 18px;
-      font-weight: bold;
-      padding: 20px 0 0 15px;
-      height: 72px;
-      background: #c0c0c0;
-    }
-    span {
-      font-family: 'Roboto', sans-serif;
-      font-size: 15px;
-      font-weight: 100;
-      font-style: italic;
-    }
-  }
-  .change-img {
-    text-align: center;
-    padding: 60px 0 30px 0;
-    background: #242424;
-    opacity: 0.5;
-    @include media ("<=lg") {
-      padding: 53px 0 45px 0;
-    }
-    @include media ("<=sm") {
-      padding: 38px 0 25px 0;
-    }
-    a {
-      margin-right: 30px;
-      &:last-child {
-        margin-right: 0;
-      }
-    }
-  }
 }
 .item-3 {
   grid-area: item-3;
-  box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2);
-  @include media ("<=lg") {
-    width: 350px;
-  }
-  @include media ("<=sm") {
-    width: 100%;
-  }
-  .change {
-    opacity: 0;
-    position: absolute;
-    top: 1286px;
-    height: 224px;
-    width: 328px;
-    transition: opacity 1s linear;
-    &:hover {
-      opacity: 1;
-    }
-    @include media ("<=lg") {
-      top: 2041px;
-      width: 350px;
-    }
-    @include media ("<=sm") {
-      top: 1705px;
-      width: 300px;
-    }
-    @include media ("<=xs") {
-      top: 1918px;
-    }
-    p {
-      font-family: 'Arvo', serif;
-      font-size: 18px;
-      font-weight: bold;
-      padding-top: 20px 0 0 15px;
-      height: 72px;
-      background: #c0c0c0;
-    }
-    span {
-      font-family: 'Roboto', sans-serif;
-      font-size: 15px;
-      font-weight: 100;
-      font-style: italic;
-    }
-  }
-  .change-img {
-    text-align: center;
-    padding: 60px 0 30px 0;
-    background: #242424;
-    opacity: 0.5;
-    @include media ("<=lg") {
-      padding: 53px 0 45px 0;
-    }
-    @include media ("<=sm") {
-      padding: 38px 0 25px 0;
-    }
-    a {
-      margin-right: 30px;
-      &:last-child {
-        margin-right: 0;
-      }
-    }
-  }
 }
 .item-4 {
   grid-area: item-4;
-  box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2); 
-  @include media ("<=lg") {
-    width: 350px;
-  }
-  @include media ("<=sm") {
-    width: 100%;
-  }
-  .change {
-    opacity: 0;
-    position: absolute;
-    top: 1738px;
-    height: 224px;
-    width: 328px;
-    transition: opacity 1s linear;
-    &:hover {
-      opacity: 1;
-    }
-    @include media ("<=lg") {
-      top: 2265px;
-      width: 350px;
-    }
-    @include media ("<=sm") {
-      top: 1890px;
-      width: 300px;
-    }
-    @include media ("<=xs") {
-      top: 2101px;
-    }
-    p {
-      font-family: 'Arvo', serif;
-      font-size: 18px;
-      font-weight: bold;
-      padding: 20px 0 0 15px;
-      height: 72px;
-      background: #c0c0c0;
-    }
-    span {
-      font-family: 'Roboto', sans-serif;
-      font-size: 15px;
-      font-weight: 100;
-      font-style: italic;
-    }
-  }
-  .change-img {
-    text-align: center;
-    padding: 60px 0 30px 0;
-    background: #242424;
-    opacity: 0.5;
-    @include media ("<=lg") {
-      padding: 54px 0 45px 0;
-    }
-    @include media ("<=sm") {
-      padding: 38px 0 25px 0;
-    }
-    a {
-      margin-right: 30px;
-      &:last-child {
-        margin-right: 0;
-      }
-    }
-  }
 }
 .item-5 {
   grid-area: item-5;
-  box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2);
-  @include media ("<=lg") {
-    width: 350px;
-    box-shadow: none;
-  }
-  @include media ("<=sm") {
-    width: 100%;
-    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2);
-  }
-  .change {
-    opacity: 0;
-    position: absolute;
-    top: 1513px;
-    height: 224px;
-    width: 329px;
-    transition: opacity 1s linear;
-    &:hover {
-      opacity: 1;
-    }
-    @include media ("<=lg") {
-      top: 2265px;
-      width: 350px;
-    }
-    @include media ("<=sm") {
-      top: 2075px;
-      width: 300px;
-    }
-    @include media ("<=xs") {
-      top: 2286px;
-    }
-    p {
-      font-family: 'Arvo', serif;
-      font-size: 18px;
-      font-weight: bold;
-      padding: 20px 0 0 15px;
-      height: 72px;
-      background: #c0c0c0;
-    }
-    span {
-      font-family: 'Roboto', sans-serif;
-      font-size: 15px;
-      font-weight: 100;
-      font-style: italic;
-    }
-  }
-  .change-img {
-    text-align: center;
-    padding: 60px 0 30px 0;
-    background: #242424;
-    opacity: 0.5;
-    @include media ("<=lg") {
-      padding: 53px 0 45px 0;
-    }
-    @include media ("<=sm") {
-      padding: 38px 0 25px 0;
-    }
-    a {
-      margin-right: 30px;
-      &:last-child {
-        margin-right: 0;
-      }
-    }
-  }
 }
 .item-6 {
   grid-area: item-6;
-  box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2);
-  @include media ("<=lg") {
-      width: 350px;
-  }
-  @include media ("<=sm") {
-    width: 100%;
-  }
-  .change {
-    opacity: 0;
-    position: absolute;
-    top: 1738px;
-    height: 224px;
-    width: 329px;
-    transition: opacity 1s linear;
-    &:hover {
-      opacity: 1;
-    }
-    @include media ("<=lg") {
-      top: 2490px;
-      width: 350px;
-    }
-    @include media ("<=sm") {
-      top: 2257px;
-      width: 300px;
-    }
-    @include media ("<=xs") {
-      top: 2467px;
-    }
-    p {
-      font-family: 'Arvo', serif;
-      font-size: 18px;
-      font-weight: bold;
-      padding: 20px 0 0 15px;
-      height: 72px;
-      background: #c0c0c0;
-    }
-    span {
-      font-family: 'Roboto', sans-serif;
-      font-size: 15px;
-      font-weight: 100;
-      font-style: italic;
-    }
-  }
-  .change-img {
-    text-align: center;
-    padding: 60px 0 30px 0;
-    background: #242424;
-    opacity: 0.5;
-    @include media ("<=lg") {
-      padding: 53px 0 45px 0;
-    }
-    @include media ("<=sm") {
-      padding: 38px 0 25px 0;
-    }
-    a {
-      margin-right: 30px;
-      &:last-child {
-        margin-right: 0;
-      }
-    }
-  }
 }
 .item-7 {
   grid-area: item-7;
-  box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2); 
-  @include media ("<=lg") {
-    width: 350px;
-  }
-  @include media ("<=sm") {
-    width: 100%;
-  }
-  .change {
-    opacity: 0;
-    position: absolute;
-    top: 1510px;
-    height: 424px;
-    width: 328px;
-    transition: opacity 1s linear;
-    &:hover {
-      opacity: 1;
-    }
-    @include media ("<=lg") {
-      top: 1800px;
-      width: 350px;
-    }
-    @include media ("<=sm") {
-      top: 2443px;
-      width: 300px;
-    }
-    @include media ("<=xs") {
-      top: 2653px;
-    }
-    p {
-      font-family: 'Arvo', serif;
-      font-size: 18px;
-      font-weight: bold;
-      padding: 30px 0 0 25px;
-      height: 90px;
-      background: #c0c0c0;
-    }
-    span {
-      font-family: 'Roboto', sans-serif;
-      font-size: 15px;
-      font-weight: 100;
-      font-style: italic;
-    }
-  }
-  .change-img {
-    text-align: center;
-    padding: 170px 0 130px 0;
-    background: #242424;
-    opacity: 0.5;
-    transition: opacity 1s linear;
-    @include media ("<=lg") {
-      padding: 184px 0 137px 0;
-    }
-    @include media ("<=sm") {
-      padding: 143px 0 115px 0;
-    }
-    a {
-      margin-right: 30px;
-      &:last-child {
-        margin-right: 0;
-      }
-    }
-  }
 }

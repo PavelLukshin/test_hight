@@ -23,6 +23,17 @@ $breakpoints: (lg: 1200px, md: 992px, sm: 768px, xs: 550px);
   display: flex;
   justify-content: space-between;
   padding-top: 25px;
+  min-height: 240px;
+  .burger {
+    position: absolute;
+    height: 50px;
+    top: 15px;
+    outline: none;
+    z-index: 10;
+    @include media ("<=md") {
+      left: 10px;
+    }
+  }
   li {
     list-style: none;
   }
@@ -37,82 +48,32 @@ $breakpoints: (lg: 1200px, md: 992px, sm: 768px, xs: 550px);
 .nav {
   display: flex;
   flex-direction: row-reverse;
-  .burger {
-  display: block;
-  position: relative;
-  top: 10px;
-  left: 0px;
-  z-index: 1;
-  input {
-    display: block;
-    width: 40px;
-    height: 32px;
-    position: absolute;
-    top: -7px;
-    left: -5px;
-    cursor: pointer;
-    opacity: 0;
-    z-index: 2;
-    -webkit-touch-callout: none;
-    &:checked ~ span {
-      opacity: 1;
-      transform: rotate(45deg) translate(-2px, -1px);
-      background: #3d3d3d;
-      }
-    &:checked ~ span:nth-last-child(3) {
-      opacity: 0;
-      transform: rotate(0deg) scale(0.2, 0.2);
-      }
-    &:checked ~ span:nth-last-child(2) {
-      transform: rotate(-45deg) translate(0, -1px);
-      }
-    &:checked ~ ul {
-      transform: none;
-      }
-    }
-  span {
-    display: block;
-    width: 33px;
-    height: 4px;
-    margin-bottom: 5px;
-    position: relative; 
-    background: #3e3e3e;
-    border-radius: 3px;
-    z-index: 1;
-    transform-origin: 4px 0px;
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                opacity 0.55s ease;
-    &:first-child {
-     transform-origin: 0% 0%;
-      }
-    &:nth-last-child(2) {
-    transform-origin: 0% 100%;
-      }
-    }
-  }
 }
 .nav-menu {
   display: none;
 }
 .nav-menu.active {
   display: flex;
-  flex-direction: row-reverse;
   position: absolute;
-  left: -560px;
-  top: -20px;
+  top: 15px;
+  padding-right: 60px;
+  z-index: 2;
   @include media ("<=md") {
     flex-direction: column;
     position: absolute;
-    left: -65px;
-    top: 20px;
+    left: -33px;
+    top: 50px;
+  }
+  a {
+    display: block;
+    padding: 10px 22px;
   }
   li {
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
     font-weight: bold;
     margin-right: 10px;
-    padding: 10px 22px;
+ 
     border-radius: 15px;
     z-index: 8;
     position: relative;
@@ -133,7 +94,6 @@ $breakpoints: (lg: 1200px, md: 992px, sm: 768px, xs: 550px);
     font-size: 40px;
     font-weight: bold;
     color: #3e3e3e;
-    margin-top: 180px;
     @include media ("<=xs") {
       font-size: 24px;
     }
@@ -180,6 +140,7 @@ $breakpoints: (lg: 1200px, md: 992px, sm: 768px, xs: 550px);
     padding-top: 12px;
     transition: opacity 1s linear;
     outline: none;
+    text-align: center;
     &:last-child {
       margin-right: 0;
     }
@@ -196,7 +157,7 @@ $breakpoints: (lg: 1200px, md: 992px, sm: 768px, xs: 550px);
       font-size: 18px;
       font-weight: 400;
       text-decoration: none;
-      padding: 12px 40px;
+      padding: 12px 0;
     }
   }
 }
