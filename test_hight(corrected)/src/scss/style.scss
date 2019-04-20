@@ -12,13 +12,13 @@
 @import 'base/main';
 
 //* Layout modules *//
+@import 'layout/header.scss';
 @import 'layout/main';
+@import 'layout/footer.scss';
 
 //* Pages modules *//
 @import 'pages/main';
 
 //* Components *//
-@import 'components/header-style.scss';
 @import 'components/main-style.scss';
 @import 'components/main-portfolio.scss';
-@import 'components/footer.scss';

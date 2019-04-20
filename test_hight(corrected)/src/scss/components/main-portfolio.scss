@@ -11,8 +11,9 @@
     color: #3e3e3e;
     margin: 0 9px 60px 0;
     @include media ("<=xs") {
-      font-size: 23px;
+      font-size: 22px;
       margin-bottom: 25px;
+      padding-left: 10px; 
     }
   }
   .btn-portfolio {
