@@ -50,77 +50,19 @@
       button.click(function() {
         $(this).hide();
 
-        for (let i = 0; i < 1; i++) {
-          const item = $(`<div class="grid-item grid-item--height2 item-1">
-            <img src="assets/images/icon-1.png" alt="icon-1">
+        for (let i = 0; i < data.items.length; i++) {
+          const item = $(`           
+           <div class="item-${i+1}">
+            <img src="assets/images/icon-${i+1}.png" alt="icon-${i+1}">
             <div class="change">
-                <div class="change-img">
-                    <a href="#"><img src="assets/images/icon-eye.png" alt="eye"></a>
-                    <a href="#"><img src="assets/images/icon-heart.png" alt="heart"></a>
-                </div>
-                <p>${data.items[i].title}<br><span>${data.items[i].description}</span></p>
-              </div>
-          </div>
-          <div class="grid-item item-2">
-          <img src="assets/images/icon-2.png" alt="icon-2">
-          <div class="change">
-              <div class="change-img">
-                  <a href="#"><img src="assets/images/icon-eye.png" alt="eye"></a>
-                  <a href="#"><img src="assets/images/icon-heart.png" alt="heart"></a>
-              </div>
-              <p>${data.items[i].title}<br><span>${data.items[i].description}</span></p>
-          </div>
-        </div>
-        <div class="grid-item item-3">
-        <img src="assets/images/icon-3.png" alt="icon-3">
-        <div class="change">
-            <div class="change-img">
-                <a href="#"><img src="assets/images/icon-eye.png" alt="eye"></a>
-                <a href="#"><img src="assets/images/icon-heart.png" alt="heart"></a>
+             <div class="change-img">
+              <a href="#"><img src="assets/images/icon-eye.png" alt="eye"></a>
+              <a href="#"><img src="assets/images/icon-heart.png" alt="heart"></a>
+             </div>
+             <p>${data.items[i].title}<br><span>${data.items[i].description}</span></p>
+             </div>
             </div>
-            <p>${data.items[i].title}<br><span>${data.items[i].description}</span></p>
-        </div>
-      </div>
-      <div class="grid-item item-4">
-        <img src="assets/images/icon-4.png" alt="icon-4">
-        <div class="change">
-            <div class="change-img">
-                <a href="#"><img src="assets/images/icon-eye.png" alt="eye"></a>
-                <a href="#"><img src="assets/images/icon-heart.png" alt="heart"></a>
-            </div>
-            <p>${data.items[i].title}<br><span>${data.items[i].description}</span></p>
-        </div>
-      </div>
-      <div class="grid-item grid-item--height2 item-5">
-        <img src="assets/images/icon-5.png" alt="icon-5">
-        <div class="change">
-            <div class="change-img">
-                <a href="#"><img src="assets/images/icon-eye.png" alt="eye"></a>
-                <a href="#"><img src="assets/images/icon-heart.png" alt="heart"></a>
-            </div>
-            <p>${data.items[i].title}<br><span>${data.items[i].description}</span></p>
-        </div>
-      </div>
-      <div class="grid-item item-6">
-        <img src="assets/images/icon-6.png" alt="icon-6">
-        <div class="change">
-            <div class="change-img">
-                <a href="#"><img src="assets/images/icon-eye.png" alt="eye"></a>
-                <a href="#"><img src="assets/images/icon-heart.png" alt="heart"></a>
-            </div>
-            <p>${data.items[i].title}<br><span>${data.items[i].description}</span></p>
-        </div>
-      </div>
-      <div class="grid-item item-7">
-        <img src="assets/images/icon-7.png" alt="icon-7">
-        <div class="change">
-            <div class="change-img">
-                <a href="#"><img src="assets/images/icon-eye.png" alt="eye"></a>
-                <a href="#"><img src="assets/images/icon-heart.png" alt="heart"></a>
-            </div>
-            <p>${data.items[i].title}<br><span>${data.items[i].description}</span></p>
-        </div>
-      </div>`);
+        `);
 
           newItem.append(item);
         }

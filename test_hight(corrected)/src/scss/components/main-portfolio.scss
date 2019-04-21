@@ -173,6 +173,92 @@
   ".item-1 .item-2 .item-3"
   ".item-1 .item-7 .item-5"
   ".item-4 .item-6 .item-5";
+  .item-1 {
+    height: 470px;
+    grid-area: item-1;
+    @include media ("<=lg") {
+      height: 480px;
+    }
+    @include media ("<=xs") {
+      height: 420px;
+      width: 300px;
+    }
+  }
+  .item-2 {
+    height: 0px;
+    grid-area: item-2;
+    @include media ("<=lg") {
+      height: 240px;
+    }
+    @include media ("<=xs") {
+      height: 210px;
+      width: 300px;
+    }
+  }
+  .item-3 {
+    height: 0px;
+    grid-area: item-3;
+    @include media ("<=lg") {
+      height: 240px;
+    }
+    @include media ("<=xs") {
+      height: 210px;
+      width: 300px;
+    }
+  }
+  .item-4 {
+    height: 200px;
+    grid-area: item-4;
+    @include media ("<=lg") {
+      height: 240px;
+    }
+    @include media ("<=xs") {
+      height: 210px;
+      width: 300px;
+    }
+  }
+  .item-5 {
+    height: 0px;
+    grid-area: item-5;
+    @include media ("<=lg") {
+      height: 200px;
+    }
+    @include media ("<=sm") {
+      height: 480px;
+    }
+    @include media ("<=xs") {
+      height: 420px;
+      width: 300px;
+    }
+  }
+  .item-6 {
+    height: 200px;
+    grid-area: item-6;
+    @include media ("<=lg") {
+      height: 180px;
+    }
+    @include media ("<=sm") {
+      height: 240px;
+    }
+    @include media ("<=xs") {
+      height: 210px;
+      width: 300px;
+    }
+  }
+  .item-7 {
+    height: 0px;
+    grid-area: item-7;
+    @include media ("<=lg") {
+      height: 0px;
+    }
+    @include media ("<=sm") {
+      height: 230px;
+    }
+    @include media ("<=xs") {
+      height: 190px;
+      width: 300px;
+    }
+  }
   @include media ("<=lg") {
     grid-gap: 0px;
     width: 760px;
@@ -198,25 +284,4 @@
       margin-bottom: 30px;
     }
   }
-}
-.item-1 {
-  grid-area: item-1;
-}
-.item-2 {
-  grid-area: item-2;
-}
-.item-3 {
-  grid-area: item-3;
-}
-.item-4 {
-  grid-area: item-4;
-}
-.item-5 {
-  grid-area: item-5;
-}
-.item-6 {
-  grid-area: item-6;
-}
-.item-7 {
-  grid-area: item-7;
 }
