@@ -1,10 +1,9 @@
 .portfolio {
-  padding: 110px 0 110px 0;
+  padding: 110px 0 80px 0;
   @include media ("<=sm") {
       padding: 20px 0 25px 0;
     }
   h2 {
-    font-family: 'Arvo', serif;
     font-size: 25px;
     font-weight: bold;
     text-align: center;
@@ -18,15 +17,13 @@
   }
   .btn-portfolio {
     display: block;
-    margin: 116px auto 0 auto;
-    width: 160px;
+    margin: 116px auto 30px auto;
+    min-width: 160px;
     height: 50px;
     background: #3e3e3e;
     color: #dadada;
     border: none;
     border-radius: 15px;
-    font-family: 'Arvo', serif;
-    font-size: 18px;
     font-weight: 100;
     transition: opacity 1s linear;
     outline: none;
@@ -83,8 +80,6 @@
       width: 300px;
     }
     p {
-      font-family: 'Arvo', serif;
-      font-size: 18px;
       font-weight: bold;
       color: #3e3e3e;
       padding: 30px 0 0 25px;
@@ -135,8 +130,6 @@
       width: 300px;
     }
     p {
-      font-family: 'Arvo', serif;
-      font-size: 18px;
       font-weight: bold;
       padding: 20px 0 0 15px;
       height: 72px;
@@ -235,7 +228,7 @@
     height: 200px;
     grid-area: item-6;
     @include media ("<=lg") {
-      height: 180px;
+      height: 230px;
     }
     @include media ("<=sm") {
       height: 240px;

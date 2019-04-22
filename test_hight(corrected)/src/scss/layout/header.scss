@@ -1,22 +1,10 @@
 $breakpoints: (lg: 1200px, md: 992px, sm: 768px, xs: 550px);
-
 .header {
   background: url(../images/bg-header.jpg) no-repeat center center / cover;
   min-height: 300px;
   padding-bottom: 154px; 
   @include media ("<=sm") {
     padding-bottom: 20px;
-  }
-}
-.wrapper {
-  width: 1110px;
-  margin: 0px auto;  
-  @include media ("<=lg") {
-    width: 100%;
-    padding: 30px 50px 0 50px;
-  }
-  @include media ("<=sm") {
-    padding: 15px 20px 0 20px;
   }
 }
 .header-menu {
@@ -99,7 +87,6 @@ $breakpoints: (lg: 1200px, md: 992px, sm: 768px, xs: 550px);
 .header-content {
   text-align: center;
   h1 {
-    font-family: 'Arvo', serif;
     font-size: 40px;
     font-weight: bold;
     color: #3e3e3e;
@@ -108,7 +95,6 @@ $breakpoints: (lg: 1200px, md: 992px, sm: 768px, xs: 550px);
     }
   }
   h3 {
-    font-family: 'Arvo', serif;
     font-size: 35px;
     font-weight: 400;
     color: #3e3e3e;
@@ -140,7 +126,7 @@ $breakpoints: (lg: 1200px, md: 992px, sm: 768px, xs: 550px);
     }
   }
   .btn {
-    width: 160px;
+    min-width: 160px;
     height: 50px;
     background: #3e3e3e;
     border: none;
@@ -166,8 +152,6 @@ $breakpoints: (lg: 1200px, md: 992px, sm: 768px, xs: 550px);
     }
     a {
       color: #f3f3f3;
-      font-family: 'Arvo', serif;
-      font-size: 18px;
       font-weight: 400;
       text-decoration: none;
       padding: 12px 50px 18px 50px;
