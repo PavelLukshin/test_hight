@@ -1,4 +1,3 @@
-
 (($) => {
   // When DOM is ready
   $(() => {
@@ -43,7 +42,7 @@
     $.getJSON('assets/data/portfolio.json', function(data) {
       const portfolio = $('.portfolio');
       const button = portfolio.find('button');
-      const newItem = $('<div class="grid newItem"></div>');
+      const newItem = $('<div class="items newItem"></div>');
 
       portfolio.append(newItem); 
 
@@ -53,7 +52,7 @@
         for (let i = 0; i < data.items.length; i++) {
           const item = $(`           
            <div class="item-${i+1}">
-            <img src="assets/images/icon-${i+1}.png" alt="icon-${i+1}">
+            <img src="${data.items[i].images}" alt="icon-${i+1}">
             <div class="change">
              <div class="change-img">
               <a href="#"><img src="assets/images/icon-eye.png" alt="eye"></a>
