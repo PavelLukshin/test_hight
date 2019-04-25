@@ -43,13 +43,12 @@
     ".item-1 .item-7 .item-5"
     ".item-4 .item-6 .item-5";
     .item-1 {
-      height: 470px;
+      height: 451px;
+      width: 349px;
       grid-area: item-1;
-      @include media ("<=lg") {
-        height: 480px;
-      }
+      box-shadow: 0px 0px 5px 0px rgba(62,62,62,0.45);
       @include media ("<=xs") {
-        height: 420px;
+        height: 388px;
         width: 300px;
       }
       .change {
@@ -98,13 +97,18 @@
       }
     }
     .item-2 {
-      height: 0px;
+      height: 210px;
       grid-area: item-2;
+      box-shadow: 0px 0px 5px 0px rgba(62,62,62,0.45);
       @include media ("<=lg") {
-        height: 240px;
+        height: 210px;
+        width: 350px;
+      }
+      @include media ("<=sm") {
+        margin-top: 20px;
       }
       @include media ("<=xs") {
-        height: 210px;
+        height: 180px;
         width: 300px;
       }
       .change {
@@ -151,13 +155,19 @@
       }
     }
     .item-3 {
-      height: 0px;
+      height: 210px;
       grid-area: item-3;
+      box-shadow: 0px 0px 5px 0px rgba(62,62,62,0.45);
       @include media ("<=lg") {
-        height: 240px;
+        height: 210px;
+        width: 350px;
+        margin-top: 30px;
+      }
+      @include media ("<=sm") {
+        margin-top: 20px;
       }
       @include media ("<=xs") {
-        height: 210px;
+        height: 180px;
         width: 300px;
       }
       .change {
@@ -204,13 +214,20 @@
       }
     }
     .item-4 {
-      height: 200px;
+      height: 210px;
       grid-area: item-4;
+      margin-top: 15px;
+      box-shadow: 0px 0px 5px 0px rgba(62,62,62,0.45);
       @include media ("<=lg") {
-        height: 240px;
+        height: 210px;
+        width: 350px;
+        margin-top: 30px;
+      }
+      @include media ("<=sm") {
+        margin-top: 20px;
       }
       @include media ("<=xs") {
-        height: 210px;
+        height: 180px;
         width: 300px;
       }
       .change {
@@ -257,16 +274,19 @@
       }
     }
     .item-5 {
-      height: 0px;
+      height: 451px;
+      width: 349px;
       grid-area: item-5;
+      margin-top: 10px;
+      box-shadow: 0px 0px 5px 0px rgba(62,62,62,0.45);
       @include media ("<=lg") {
-        height: 200px;
+        margin-top: 30px;
       }
       @include media ("<=sm") {
-        height: 480px;
+        margin-top: 20px;
       }
       @include media ("<=xs") {
-        height: 420px;
+        height: 388px;
         width: 300px;
       }
       .change {
@@ -315,16 +335,20 @@
       }
     }
     .item-6 {
-      height: 200px;
+      height: 210px;
       grid-area: item-6;
+      margin-top: 15px;
+      box-shadow: 0px 0px 5px 0px rgba(62,62,62,0.45);
       @include media ("<=lg") {
-        height: 230px;
+        height: 210px;
+        width: 350px;
+        margin-top: 30px;
       }
       @include media ("<=sm") {
-        height: 240px;
+        margin-top: 20px;
       }
       @include media ("<=xs") {
-        height: 210px;
+        height: 180px;
         width: 300px;
       }
       .change {
@@ -371,16 +395,20 @@
       }
     }
     .item-7 {
-      height: 0px;
+      height: 210px;
       grid-area: item-7;
+      margin-top: 10px;
+      box-shadow: 0px 0px 5px 0px rgba(62,62,62,0.45);
       @include media ("<=lg") {
-        height: 0px;
+        height: 210px;
+        width: 350px;
+        margin-top: 30px;
       }
       @include media ("<=sm") {
-        height: 230px;
+        margin-top: 20px;
       }
       @include media ("<=xs") {
-        height: 190px;
+        height: 180px;
         width: 300px;
       }
       .change {
@@ -453,7 +481,7 @@
     }
   }
 .newItem {
-  margin: 45px 0 0 0;
+  margin: 25px 0 0 0;
   display: grid;
   grid-gap: 15px;
   grid-template-areas: 
@@ -461,95 +489,98 @@
   ".item-1 .item-7 .item-5"
   ".item-4 .item-6 .item-5";
   .item-1 {
-    height: 470px;
+    height: 451px;
     grid-area: item-1;
-    @include media ("<=lg") {
-      height: 480px;
-    }
+    box-shadow: 0px 0px 5px 0px rgba(62,62,62,0.45);
     @include media ("<=xs") {
-      height: 420px;
+      height: 388px;
       width: 300px;
     }
   }
   .item-2 {
-    height: 0px;
+    height: 210px;
     grid-area: item-2;
-    @include media ("<=lg") {
-      height: 240px;
-    }
+    box-shadow: 0px 0px 5px 0px rgba(62,62,62,0.45);
     @include media ("<=xs") {
-      height: 210px;
+      height: 180px;
       width: 300px;
     }
   }
   .item-3 {
-    height: 0px;
+    height: 210px;
     grid-area: item-3;
-    @include media ("<=lg") {
-      height: 240px;
-    }
+    box-shadow: 0px 0px 5px 0px rgba(62,62,62,0.45);
     @include media ("<=xs") {
-      height: 210px;
+      height: 180px;
       width: 300px;
     }
   }
   .item-4 {
-    height: 200px;
+    height: 210px;
     grid-area: item-4;
+    margin-top: 15px;
+    box-shadow: 0px 0px 5px 0px rgba(62,62,62,0.45);
     @include media ("<=lg") {
-      height: 240px;
+      margin-top: 30px;
+    }
+    @include media ("<=sm") {
+      margin-top: 20px;
     }
     @include media ("<=xs") {
-      height: 210px;
+      height: 180px;
       width: 300px;
     }
   }
   .item-5 {
-    height: 0px;
+    height: 451px;
     grid-area: item-5;
+    margin-top: 10px;
+    box-shadow: 0px 0px 5px 0px rgba(62,62,62,0.45);
     @include media ("<=lg") {
-      height: 200px;
+      margin-top: 30px;
     }
     @include media ("<=sm") {
-      height: 480px;
+      height: 451px;
+      margin-top: 20px;
     }
     @include media ("<=xs") {
-      height: 420px;
+      height: 388px;
       width: 300px;
     }
   }
   .item-6 {
-    height: 200px;
+    height: 210px;
     grid-area: item-6;
-    @include media ("<=lg") {
-      height: 230px;
-    }
+    box-shadow: 0px 0px 5px 0px rgba(62,62,62,0.45);
     @include media ("<=sm") {
-      height: 240px;
+      height: 210px;
     }
     @include media ("<=xs") {
-      height: 210px;
+      height: 180px;
       width: 300px;
     }
   }
   .item-7 {
-    height: 0px;
+    height: 210px;
     grid-area: item-7;
+    margin-top: 10px;
+    box-shadow: 0px 0px 5px 0px rgba(62,62,62,0.45);
     @include media ("<=lg") {
-      height: 0px;
+      margin-top: 30px;
     }
     @include media ("<=sm") {
-      height: 230px;
+      height: 210px;
+      margin-top: 20px;
     }
     @include media ("<=xs") {
-      height: 190px;
+      height: 180px;
       width: 300px;
     }
   }
   @include media ("<=lg") {
     grid-gap: 0px;
     width: 760px;
-    margin: 0 auto;
+    margin: 30px auto 0 auto;
     grid-template-areas: 
     ".item-1 .item-2"
     ".item-1 .item-5"
@@ -560,6 +591,7 @@
   @include media ("<=sm") {
     width: 100%;
     display: flex;
+    margin-top: 20px;
     flex-direction: column;
     justify-content: center;
     align-items: center;

@@ -57,8 +57,19 @@
     font-size: 20px;
     font-weight: bold;
     color: #3e3e3e;
-    margin-bottom: 25px;
+    max-width: 360px;
+    min-height: 30px;
+    @include media ("<=lg") {
+      max-width: 900px;
+    }
+    @include media ("<=md") {
+      max-width: 720px;
+    }
+    @include media ("<=sm") {
+      max-width: 480px;
+    }
     @include media ("<=xs") {
+      max-width: 250px;
       font-size: 14px; 
     }
   }
@@ -85,8 +96,14 @@
   left: 462px;
   top: 0px;
   @include media ("<=lg") {
-    left: 400px;
+    left: 910px;
     top: 33px;
+  }
+  @include media ("<=md") {
+    left: 695px;
+  }
+  @include media ("<=sm") {
+    left: 470px;
   }
   @include media ("<=xs") {
     left: 260px;
@@ -100,8 +117,14 @@
   right: 3px;
   top: 29px;
   @include media ("<=lg") {
-    left: 400px;
+    left: 910px;
     top: 58px;
+  }
+  @include media ("<=md") {
+    left: 695px;
+  }
+  @include media ("<=sm") {
+    left: 470px;
   }
   @include media ("<=xs") {
     left: 260px;
