@@ -2,13 +2,8 @@
   // When DOM is ready
   $(() => {
 
-    $("#footerForm").validate({
-      rules: {
-        email: {
-          required: true,
-          email: true
-        }
-      }
+    $('.burger').click(function(){
+      $('.nav-menu').toggleClass('active');
     });
 
 
@@ -24,19 +19,6 @@
         slidesToScroll: 1,
         vertical: true 
     });
-
-
-    
-    $('.burger').click(function(){
-      $('.nav-menu').toggleClass('active');
-    });
-
-    $('.grid').masonry({
-      // options
-      itemSelector: '.grid-item',
-      gutter: 30
-    });
-
 
 
     $.getJSON('assets/data/portfolio.json', function(data) {
@@ -67,6 +49,16 @@
         }
       });
     });
+  });
+
+  $('#footerForm').validate({
+    rules: {
+      email: {
+        required: true,
+        minWords: 1,
+        email: true
+      }
+    }
   });
 
 

@@ -92,21 +92,12 @@
   content: url(../images/iconfinder-icon-up.svg);
 }
 .slick-prev {
-  z-index: 2;
-  left: 462px;
   top: 0px;
+  right: 3px;
+  z-index: 6;
   @include media ("<=lg") {
-    left: 910px;
-    top: 33px;
-  }
-  @include media ("<=md") {
-    left: 695px;
-  }
-  @include media ("<=sm") {
-    left: 470px;
-  }
-  @include media ("<=xs") {
-    left: 260px;
+    right: 0px;
+    top: 28px;
   }
 }
 .slick-next:before {
@@ -117,16 +108,7 @@
   right: 3px;
   top: 29px;
   @include media ("<=lg") {
-    left: 910px;
+    right: 0px;
     top: 58px;
-  }
-  @include media ("<=md") {
-    left: 695px;
-  }
-  @include media ("<=sm") {
-    left: 470px;
-  }
-  @include media ("<=xs") {
-    left: 260px;
   }
 }

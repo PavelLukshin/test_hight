@@ -50,12 +50,14 @@
 }
 .wrap {
   width: 135px;
+  padding-right: 10px;
   @include media ("<=lg") {
     width: 100%;
   }
 }
 .blog {
   width: 250px;
+  padding-right: 10px;
   @include media ("<=lg") {
     width: 100%;
   }
@@ -73,13 +75,12 @@
 }
 .news {
   margin-left: -125px;
+  padding-right: 10px;
   width: 255px;
   @include media ("<=lg") {
     margin-left: 0px;
     width: 100%;
-  }
-
- 
+  } 
   p {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
@@ -91,7 +92,8 @@
 }
 .footerForm {
   display: flex;
-  margin-top: 13px;
+  position: relative;
+  top: 13px;
   input[type="email"] {
     max-width: 160px;
     min-height: 42px;
@@ -99,33 +101,38 @@
     border-radius: 12px 0 0 12px;
     border: none;
     outline: none;
-  }
-  button {
-  min-width: 95px;
-  height: 42px;
-  border-radius: 0 12px 12px 0;
-  border: none;
-  background: #3e3e3e;
-  color: #d3d3d3;
-  margin-left: -5px;
-  outline: none;
-  transition: opacity 1s linear;
-  &:hover {
-    opacity: 0.7;
+    @include media ("<=lg") {
+      max-width: none;
+      width: 85%;
     }
   }
-}
-input.error {
-  border: 2px solid #99182c;
-  margin-right: -308px;
-}
-label.error {
-  position: relative;
-  top: 44px;
-  left: 150px;
-  background: #f32d4b;
-  height: 30px;
-  padding: 5px;
+  button {
+    min-width: 95px;
+    max-width: 100px;
+    min-height: 45px;
+    border-radius: 0 12px 12px 0;
+    border: none;
+    background: #3e3e3e;
+    color: #d3d3d3;
+    outline: none;
+    transition: opacity 1s linear;
+    @include media ("<=lg") {
+      left: 250px;
+    }
+    &:hover {
+      opacity: 0.7;
+      }
+    }
+  label.error {
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    font-size: 17px;
+    text-align: center;
+    width: 290px;
+    min-height: 20px;
+    background: rgb(233, 39, 39);
+  }
 }
 .copyright {
   font-size: 15px;
