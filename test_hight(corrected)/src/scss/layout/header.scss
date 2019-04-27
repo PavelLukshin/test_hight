@@ -38,11 +38,11 @@
   display: flex;
   flex-direction: row-reverse;
 }
-.nav-menu {
-  display: none;
-}
 .nav-menu.active {
   display: flex;
+}
+.nav-menu {
+  display: none;
   position: absolute;
   top: 15px;
   padding-right: 60px;
