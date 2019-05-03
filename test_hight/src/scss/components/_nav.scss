@@ -21,6 +21,8 @@
     }
     a {
       display: block;
+      text-decoration: none;
+      color: #3e3e3e;
       padding: 10px 22px;
       @include media ("<=md") {
         padding: 10px 850px 10px 80px;
@@ -33,6 +35,7 @@
       font-family: 'Roboto', sans-serif;
       font-size: 17px;
       font-weight: bold;
+      list-style: none;
       margin-right: 10px;
       border-radius: 15px;
       z-index: 8;

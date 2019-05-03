@@ -37,8 +37,8 @@
             <img src="${data.items[i].images}" alt="icon-${i+1}">
             <div class="change">
              <div class="change-img">
-              <a href="#"><img src="assets/images/icon-eye.svg" alt="eye"></a>
-              <a href="#"><img src="assets/images/icon-heart.svg" alt="heart"></a>
+              <a class="eye" href="#"><img src="assets/images/icon-eye.svg" alt="eye"></a>
+              <a class="hearts" href="#"><img src="assets/images/icon-hearts.svg" alt="heart"></a>
              </div>
              <p>${data.items[i].title}<br><span>${data.items[i].description}</span></p>
              </div>
