@@ -1,22 +1,100 @@
+.bg-footer {
+  background: #d3d3d3;
+}
 .footer {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 50px;
-    @include media ("<=desktop") {
-        padding-top: 20px;
-    } 
-    @include media ("<=tablet") {
-        &::after {
-            position: absolute;
-            top: 210px;
-            left: auto; 
-            background-color: #787878;
-            display: block;
-            content: "";
-            height: 1px;
-            width: 90vw;
-        }
-    }   
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 0 85px 0;
+  @include media ("<=lg") {
+    padding: 30px 0 25px 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  @include media ("<=md") {
+    padding-left: 30px;
+  }
+  @include media ("<=sm") {
+    grid-template-columns: 1fr;
+    padding: 30px 0 40px 10px;
+  }
+  .footer-h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #3e3e3e;
+    margin-bottom: 40px;
+  }
+  a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #3e3e3e;
+    text-decoration: none;
+    transition: opacity 1s linear;
+    
+    &:hover {
+      opacity: 0.7;
+      text-decoration: underline;
+    }
+  }
+  li {
+    list-style: none;
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+  ul {
+    margin-left: -40px; 
+  }
+}
+.wrap {
+  min-width: 135px;
+  padding-right: 10px;
+  @include media ("<=lg") {
+    width: 100%;
+  }
+}
+.blog {
+  width: 250px;
+  padding-right: 10px;
+  @include media ("<=lg") {
+    width: 100%;
+  }
+  p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5em;
+    color: #3e3e3e;
+    &::first-line {
+      font-size: 18;
+      font-weight: bold;
+    }
+  }
+}
+.news {
+  margin-left: -125px;
+  padding-right: 10px;
+  width: 255px;
+  @include media ("<=lg") {
+    margin-left: 0px;
+    width: 100%;
+  } 
+  p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5em;
+    text-align: justify;
+    color: #3e3e3e;
+  }
+}
+.copyright {
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  color: #d3d3d3;
+  background: #3e3e3e;
+  padding: 16px 0;
 }

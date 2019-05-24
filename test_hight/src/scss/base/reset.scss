@@ -15,7 +15,18 @@ body {
   background: map-get($base, 'base-background-color');
   font: #{map-get($base, 'base-font-size')}/#{map-get($base, 'base-line-height')} #{map-get($base, 'base-font-family')};
   min-width: map-get($base, base-min-width);
-  overflow-x: hidden;
+  @include media ("<=md") {  
+    overflow-x: hidden;
+  }
+}
+// Wraper
+.wrapper {
+  width: 1110px;
+  margin: 0px auto;  
+  @include media ("<=lg") {
+    width: 100%;
+    padding-top: 30px;
+  }
 }
 
 // adaptive images

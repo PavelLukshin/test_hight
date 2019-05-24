@@ -68,9 +68,6 @@ module.exports = {
       '!{.history,.history/**}',
       '!.gitattributes',
       '!.travis.yml',
-      '!{.idea,.idea/**}',
-      '!.eslintignore',
-      '!.editorconfig',
       '!.eslintrc'
     ];
   },

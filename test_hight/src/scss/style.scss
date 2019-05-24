@@ -11,11 +11,16 @@
 //* Base modules *//
 @import 'base/main';
 
+//*Components modules *//
+@import 'components/burger';
+@import 'components/nav';
+@import 'components/slider';
+@import 'components/footerForm';
+@import 'components/about';
+@import 'components/portfolio';
+
 //* Layout modules *//
 @import 'layout/main';
 
 //* Pages modules *//
 @import 'pages/main';
-
-//* Components *//
-@import 'components/main';
